@@ -1,0 +1,85 @@
+---
+description: It is projects principles
+globs: 
+---
+# Design and Development Principles
+
+0.
+Always use --legacy-peer-deps
+"bundleIdentifier": "co.girgin.aiapp"
+my organization nane = co.girgin
+
+
+
+## 1. Expo Compatibility
+- Use packages that have proper Expo support
+- Ensure all implementations work within Expo's framework
+- Test compatibility before implementing new features
+
+## 2. Design Consistency
+- No shadows in design
+- No gradients unless specifically requested
+- Maintain consistent styling across all routes:
+  - Analysis page
+  - Editor page
+  - History page
+- Use consistent color palette:
+  - Primary (Green): #58cc02 / #58a700
+  - Secondary (Blue): #1cb0f6 / #1899d6
+  - Text (Dark): #4b4b4b
+  - Text (Light): #777777
+  - Border: #e5e5e5
+
+## 3. Button Design (DuoButton)
+- Follow Duolingo's button animation style
+- Use bottom border only (no full border)
+- Fast, snappy animations:
+  - Spring configuration:
+    - tension: 400
+    - friction: 20
+- Consistent appearance when disabled:
+  - No opacity changes
+  - Maintain visual style
+  - Only disable interactivity
+
+## 4. UI Principles
+- Keep UI clean and minimal
+- Show loading states for async operations
+- Maintain proper spacing and alignment
+- Make interfaces intuitive and user-friendly
+- Use consistent component sizing:
+  - Button height: 50px
+  - Input padding: 16px
+  - Border radius: 12px
+  - Border width: 2px
+
+## 5. Code Organization
+- Keep code clean and well-structured
+- Maintain consistent styling patterns
+- Proper error handling:
+  - Clear error messages
+  - Graceful fallbacks
+  - User-friendly error states
+- Clear separation of concerns:
+  - Component logic
+  - Styling
+  - Business logic
+  - API calls
+
+## 6. User Experience
+- Immediate feedback for user actions
+- Clear loading states
+- Intuitive navigation
+- Consistent behavior across the app
+- Smooth animations and transitions
+- Proper keyboard handling
+- Safe area awareness
+
+## 7. Performance
+- Fast loading times
+- Smooth animations
+- Efficient state management
+- Proper async operation handling
+- Minimize unnecessary rerenders
+
+These principles should be followed across all features and components in the application to maintain consistency and quality.
